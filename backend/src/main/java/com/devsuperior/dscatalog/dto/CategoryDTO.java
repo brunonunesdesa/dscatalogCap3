@@ -11,14 +11,14 @@ public class CategoryDTO implements Serializable {
 	private String name;
 
 	public CategoryDTO() {
-		
+
 	}
 
 	public CategoryDTO(Long id, String name) {
 		this.Id = id;
 		this.name = name;
 	}
-	
+
 	public CategoryDTO(Category entity) {
 		this.Id = entity.getId();
 		this.name = entity.getName();
