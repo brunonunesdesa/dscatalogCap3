@@ -62,11 +62,11 @@ public class Product implements Serializable{
 		this.id = id;
 	}
 	
-	public String getNameString() {
+	public String getName() {
 		return name;
 	}
 	
-	public void setNameString(String name) {
+	public void setName(String name) {
 		this.name = name;
 	}
 	
@@ -78,11 +78,11 @@ public class Product implements Serializable{
 		this.description = description;
 	}
 	
-	public Double getPrize() {
+	public Double getPrice() {
 		return price;
 	}
 	
-	public void setPrize(Double price) {
+	public void setPrice(Double price) {
 		this.price = price;
 	}
 	
