@@ -8,6 +8,8 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
+import com.devsuperior.dscatalog.dto.RoleDTO;
+
 @Entity
 @Table(name = "tb_role")
 public class Role implements Serializable {
@@ -25,6 +27,11 @@ public class Role implements Serializable {
 	public Role(Long id, String authority) {
 		this.id = id;
 		this.authority = authority;
+	}
+	
+	public Role(RoleDTO entity) {
+		this.id = entity.getId();
+		this.authority = entity.getAuthority();
 	}
 
 	public Long getId() {
