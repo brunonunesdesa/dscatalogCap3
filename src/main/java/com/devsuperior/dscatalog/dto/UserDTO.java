@@ -4,6 +4,8 @@ import java.io.Serializable;
 import java.util.HashSet;
 import java.util.Set;
 
+import javax.persistence.Column;
+
 import com.devsuperior.dscatalog.entities.Role;
 import com.devsuperior.dscatalog.entities.User;
 
@@ -12,6 +14,8 @@ public class UserDTO implements Serializable {
 	private Long id;
 	private String firstName;
 	private String lastName;
+	
+	@Column(unique = true)
 	private String email;
 	private String password;
 	private Set<RoleDTO> roles = new HashSet<>();
